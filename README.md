@@ -5,9 +5,7 @@ It uses an "3A Fast Charge UPS Power Supply module" to provide a cheap power bac
 The INA226 module provides voltage, current and power monitor and is connected by the I2C bus.
 
 
-<img  src="img/ups.png"  width="360"  height="360">
-
-<img  src="img/ina226.png"  width="360"  height="360">
+<img  src="img/ups.png"  width="360"  height="360"><img  src="img/ina226.png"  width="360"  height="360">
 
 To interface with the ina226 module the script uses the [pi_ina226](https://github.com/e71828/pi_ina226/) library.
 
