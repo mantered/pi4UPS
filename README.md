@@ -53,7 +53,7 @@ Check `events.log` for status/errors of the UPS service.
 
 ### Script running in terminal
 
-<img  src="img/ups_terminal.jpg"  width="948"  height="551">
+<img  src="img/ups_terminal.jpg"  width="948"  height="451">
 
 
 #### To install as a service on Ubuntu with ***Systemd***:
