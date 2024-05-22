@@ -1,0 +1,4 @@
+pi-ina226 @ git+https://github.com/e71828/pi_ina226.git@ccbaa21c1439f0c9728ef838162f4a18638e21dc
+pigpio==1.78
+alive-progress==2.4.1
+schedule==1.2.1

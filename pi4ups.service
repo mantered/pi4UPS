@@ -1,0 +1,14 @@
+[Unit]
+Description=UPS Service
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+WorkingDirectory=/path/
+ExecStart=/bin/sh -c "/usr/bin/python3 /home/user/pi4UPS/ups_daemon.py"
+StandardInput=tty-force
+User=
+
+[Install]
+WantedBy=multi-user.target
