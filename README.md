@@ -1,4 +1,4 @@
-## This is the Python code for [Cheap UPS solution for Raspberry Pi 4b](https://) tutorial from Instructables.
+## This is the Python code for [Cheap UPS solution for Raspberry Pi 4b](https://www.instructables.com/Cheap-UPS-for-Raspberry-Pi-4/) tutorial from Instructables.
 
 #### It uses an "3A Fast Charge UPS Power Supply module" to provide a cheap power backup solution for Raspberry Pi 4. The INA226 module provides voltage, current and power monitor and is connected by the I2C bus.
 
