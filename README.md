@@ -9,7 +9,7 @@ To interface with the ina226 module the script uses the [pi_ina226](https://gith
 
 ## Install and usage:
 
-Install the [pigpio library](https://abyz.me.uk/rpi/pigpio/index.html), enable and start it:
+Install the [pigpio library](https://github.com/joan2937/pigpio), enable and start it:
 
 ```console
 sudo apt-get install pigpio
