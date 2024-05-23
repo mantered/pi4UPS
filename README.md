@@ -9,7 +9,15 @@ To interface with the ina226 module the script uses the [pi_ina226](https://gith
 
 ## Install and usage:
 
-Clone or download the repo:
+Install the [pigpio library](https://abyz.me.uk/rpi/pigpio/index.html), enable and start it:
+
+```console
+sudo apt-get install pigpio
+sudo systemctl enable pigpiod
+sudo systemctl start pigpiod
+```
+
+Clone or download this repo:
 
 ```console
 
@@ -18,6 +26,10 @@ cd pi4UPS/
 pip3 install -r requirements.txt
 
 ```
+## There are two ways of running the UPS script:
+
+
+1. ###  runnning in terminal:
 
 Edit the `powerUPS.py` file and set the following:
 
@@ -43,18 +55,13 @@ The script is active, monitoring pin 4 for a power loss event.
 
 Press Ctrl+C to exit the script and stop the monitoring.
 
-## Test
 
-The script has been tested on the Raspi 4b+ on Ubuntu 22.04.4 aarch64 and Python 3.10,
-`powerUPS.py `is meant to be used from terminal and `ups_daemon.py` as a service.
-Check `events.log` for status/errors of the UPS service.
-
-### Script running in terminal
+##### Script running in terminal
 
 <img  src="img/ups_terminal.jpg"  width="948"  height="501">
 
 
-#### To install as a service on Ubuntu with ***Systemd***:
+2. ### Install as a service on Ubuntu with ***Systemd***:
 
 Edit the `pi4ups.service` file:
 
@@ -90,3 +97,9 @@ Check if the service is running without errors:
 $ sudo systemctl status pi4ups.service
 
 ```
+
+## Testing
+
+The script has been tested on the Raspi 4b+ on Ubuntu 22.04.4 aarch64 and Python 3.10,
+`powerUPS.py `is meant to be used from terminal and `ups_daemon.py` as a service.
+Check `events.log` for status/errors of the UPS service.
