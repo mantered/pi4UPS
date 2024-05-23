@@ -57,7 +57,7 @@ def signal_handler(sig, frame):
     if worker_thread is not None:
         worker_thread.join()
     sys.exit(0)
-    
+
 
 def remap(number):                         
     number_s = number - from_min
@@ -113,8 +113,8 @@ def main():
     cb = pi.callback(PowerSense_GPIO, pigpio.EITHER_EDGE, my_callback)
     
     signal.signal(signal.SIGINT, signal_handler)
-    logger.info(f"{time_now()}  > Waiting for the power loss signal ...")        
     signal.pause()
+    logger.info(f"{time_now()}  > Waiting for the power loss signal ...")        
 
     
     

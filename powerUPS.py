@@ -83,6 +83,8 @@ def signal_handler(sig, frame):
     if worker_thread is not None:
         worker_thread.join()
     
+    # disconnecting from pigpio to avoid 100% CPU usage
+    pi.stop()
     sys.exit(0)
     
 def my_callback(gpio, level, tick):
