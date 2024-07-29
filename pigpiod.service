@@ -1,0 +1,8 @@
+1 [Unit]
+2 Description=Daemon required to control GPIO pins via pigpio
+3 [Service]
+4 ExecStart=/usr/local/bin/pigpiod -l -s 10 -n 127.0.0.1
+5 ExecStop=/bin/systemctl kill -s SIGKILL pigpiod
+6 Type=forking
+7 [Install]
+8 WantedBy=multi-user.target
